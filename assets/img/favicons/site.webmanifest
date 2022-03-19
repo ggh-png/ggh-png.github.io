@@ -16,7 +16,7 @@ layout: compress
     },
     {
       "src": "{{ favicon_path }}/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "sizes": "310x310",
       "type": "image/png"
     }],
   "start_url": "{{ '/index.html' | relative_url }}",

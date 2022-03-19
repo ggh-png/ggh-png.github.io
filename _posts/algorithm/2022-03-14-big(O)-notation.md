@@ -1,7 +1,7 @@
 ---
 title: big(O) notation
 author: ggh-png
-date: 2019-08-08 14:10:00 +0800
+date: 2022-03-14 14:10:00 +0800
 categories: [C++, algorithm]
 tags: [algorithm]
 render_with_liquid: false

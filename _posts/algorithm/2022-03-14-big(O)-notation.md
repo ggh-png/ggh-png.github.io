@@ -49,7 +49,7 @@ render_with_liquid: false
     > ex) O(N^2 + 3N + 2) → O(N^2)
     > 
 
-### big(O) Funtions
+### big(O) Functions
 
 ---
 

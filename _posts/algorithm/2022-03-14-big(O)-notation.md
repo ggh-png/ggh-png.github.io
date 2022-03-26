@@ -2,7 +2,7 @@
 title: big(O) notation
 author: ggh-png
 date: 2022-03-14 14:10:00 +0800
-categories: [C++, algorithm]
+categories: [algorithm, 자료구조]
 tags: [algorithm]
 render_with_liquid: false
 ---

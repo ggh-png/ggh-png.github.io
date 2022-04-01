@@ -50,14 +50,12 @@
     {% endfor %}
 
   </ul> <!-- ul.nav.flex-column -->
-
   <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
 
     {% unless site.theme_mode %}
       <button class="mode-toggle btn" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
       </button>
-
       {% if site.data.contact.size > 0 %}
         <span class="icon-border"></span>
       {% endif %}
@@ -67,8 +65,8 @@
       {% capture url %}
         {%- if entry.type == 'github' -%}
           https://github.com/{{ site.github.username }}
-        {%- elsif entry.type == 'twitter' -%}
-          https://twitter.com/{{ site.twitter.username }}
+        {%- elsif entry.type == 'linkedin' -%}
+          https://linkedin.com/{{ site.linkedin.username }}
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
@@ -87,10 +85,11 @@
       {% endif %}
 
     {% endfor %}
-  <div style="text-align: center;">
-    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fggh-png.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-  </div>
+ 
   </div> <!-- .sidebar-bottom -->
 
+    <div style="text-align: center;">
+      <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fggh-png.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+    </div>
   
 </div><!-- #sidebar -->

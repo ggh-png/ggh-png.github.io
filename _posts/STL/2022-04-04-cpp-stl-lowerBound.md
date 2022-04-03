@@ -178,7 +178,7 @@ upper_bound(9) : 7
         - key 값을 초과하는 첫번째 인덱스 값을 찾기 때문.
 - upper_bound(리스트의 시작점, 리스트의 끝점, 찾을 key)
     - 반환형은 **Iterator(주소 값)** 이기에 리스트의 첫 번째 주소를 빼면 N번째 인덱스인지 알 수 있다.
-    - index = lower_bound(리스트의 시작점, 리스트의 끝점, 찾을 key) - 리스트의 시작점
+    - index = upper_bound(리스트의 시작점, 리스트의 끝점, 찾을 key) - 리스트의 시작점
     
 
 ### **Reference**

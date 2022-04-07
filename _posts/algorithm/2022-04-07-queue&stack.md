@@ -7,7 +7,6 @@ tags: [algorithm]
 render_with_liquid: false
 ---
 
-
 # STACK & QUEUE
 
 ### 개yo
@@ -137,7 +136,7 @@ int main()
     - 요소 값이 들어있는 리스트 [ 3, 1, 4, 1, 5, 9, 2 ]에서 먼저 들어온 요소를 1개씩 제거
         - [ 1, 4, 1, 5, 9, 2 ] .. [ 4, 1, 5, 9, 2 ] .. [ 1, 5, 9, 2 ] ...... [ ]
 
-### stack 구현 - stl stack
+### Queue 구현 - stl queue
 
 ---
 
@@ -170,7 +169,7 @@ int main()
 }
 ```
 
-### stack 구현 - stl vector
+### Queue 구현 - stl vector
 
 ---
 

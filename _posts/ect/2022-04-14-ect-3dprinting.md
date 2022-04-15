@@ -12,17 +12,11 @@ render_with_liquid: false
 
 ---
 
-### 계기
-
----
-
 항상 퇴근을 하고 집에 있을 때 항상 저 갈곳을 잃은 가방이 신경이 쓰였다.
 
 > 따로 사면 되지만.... 집에 놀고있는 프린터도 있기에 겸사겸사..
 > 
-> 
-> 설치장소는 책상 옆 창문틀에 할 예정 
-> 
+
 
 ![https://user-images.githubusercontent.com/71277820/163517816-931eeff2-e7d2-46b2-bb74-b6b132896247.png](https://user-images.githubusercontent.com/71277820/163517816-931eeff2-e7d2-46b2-bb74-b6b132896247.png)
 

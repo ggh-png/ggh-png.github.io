@@ -3,7 +3,7 @@ title: 프로그래머스 - level_2 - 기능개발
 author: ggh-png
 date: 2022-04-19 10:30:00 +0800
 categories: [PS, 프로그래머스]
-tags: [C++, PS, 프로그래머스, 정렬]
+tags: [C++, PS, 프로그래머스, stack]
 render_with_liquid: false
 sitemap :
   changefreq : daily

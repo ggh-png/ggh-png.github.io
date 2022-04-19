@@ -226,4 +226,4 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 
 [https://github.com/ggh-png/PS](https://github.com/ggh-png/PS)
 
-[STACK & QUEUE](https://ggh-png.github.io/posts/queue&stack/)
+[STACK & QUEUE](https://ggh-png.github.io/posts/queue-stack/)

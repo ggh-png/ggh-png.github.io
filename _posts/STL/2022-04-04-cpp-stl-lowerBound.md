@@ -5,9 +5,6 @@ date: 2022-04-04 00:00:00 +0800
 categories: [C++, STL]
 tags: [C++, 정렬, STL]
 render_with_liquid: false
-sitemap :
-  changefreq : daily
-  priority : 1.0
 ---
 
 

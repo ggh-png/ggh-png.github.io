@@ -5,9 +5,6 @@ date: 2022-04-14 10:10:00 +0800
 categories: [ect, 3DPrint]
 tags: [ect, 3DPrint]
 render_with_liquid: false
-sitemap :
-  changefreq : daily
-  priority : 1.0
 ---
 
 

@@ -5,13 +5,7 @@ date: 2022-03-14 14:10:00 +0800
 categories: [algorithm, 자료구조]
 tags: [algorithm]
 render_with_liquid: false
-sitemap :
-  changefreq : daily
-  priority : 1.0
 ---
-
-
-
 
 # big (O) notation
 

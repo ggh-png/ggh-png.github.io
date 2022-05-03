@@ -5,9 +5,6 @@ date: 2022-04-07 10:10:00 +0800
 categories: [algorithm, 자료구조]
 tags: [algorithm, stack, queue]
 render_with_liquid: false
-sitemap :
-  changefreq : daily
-  priority : 1.0
 ---
 
 # STACK & QUEUE

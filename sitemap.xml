@@ -1,66 +1,32 @@
 ---
+layout: null
+sitemap:
+  exclude: 'yes'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    {% unless post.published == false %}
     <url>
-        <loc>{{ site.url }}/tag/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/wiki/index/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/blog/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-{% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-    {% if post.updated == null %}
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.sitemap.lastmod %}
+        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif post.date %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    {% else %}
-        <lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
-    {% endif %}
-    {% if post.sitemap.changefreq == null %}
-        <changefreq>daily</changefreq>
-    {% else %}
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if post.sitemap.changefreq %}
         <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-    {% endif %}
-
-    {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-    {% else %}
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if post.sitemap.priority %}
         <priority>{{ post.sitemap.priority }}</priority>
-    {% endif %}
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
     </url>
-{% endfor %}
-{% assign documents = site.wiki %}
-{% for doc in documents %}
-    {% if doc.public == true and doc.title != 'wiki index'%}
-    <url>
-        <loc>{{ site.url }}{{ doc.url }}</loc>
-        {% if doc.updated == null %}
-            <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-            <lastmod>{{ doc.updated | date_to_xmlschema }}</lastmod>
-        {% endif %}
-
-        {% if doc.sitemap.changefreq == null %}
-            <changefreq>daily</changefreq>
-        {% else %}
-            <changefreq>{{ doc.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if doc.sitemap.priority == null %}
-            <priority>0.5</priority>
-        {% else %}
-            <priority>{{ doc.sitemap.priority }}</priority>
-        {% endif %}
-    </url>
-    {% endif %}
-{% endfor %}
+    {% endunless %}
+  {% endfor %}
 </urlset>
